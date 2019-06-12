@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digital Assistant</title>
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <!-- CSS Styling  -->
+    <link rel="stylesheet" href="./assets/styling/ceciliastyles.css">
+</head>
+
+<body>
+
+    <!-- Page 1 -->
+    <div class="jumbotron jumbotron-fluid" id="header">
+        <div class="container">
+            <h1 class="display-4">Digital Assistant</h1>
+        </div>
+    </div>
+
+    <div class="main">
+        <img id="image" src="./assets/images/speakingbubble.jpg">
+        <div id="intro">Hi, I'm Phil. What would you like to look at?</div>
+
+        <!-- Add moving gif of Phil here  -->
+    </div>
+    </div>
+
+    <hr>
+
+    <!-- Page 2 -->
+    <!-- Add image of Phil here, next to header -->
+    <div id="options">
+        <h3>What are you curious about?</h3>
+        <li>Weather</li>
+        <li>Sports</li>
+        <li>Food</li>
+
+        <div class="question">
+            <!-- dynamically add user's question -->
+        </div>
+
+        <img id="duck" src="./assets/images/rubberduck.jpg">
+
+        <button>Submit</button>
+    </div>
+
+    <hr>
+
+    <!-- Page 3 -->
+
+    <div class="questioninput">
+        <!-- dynamically add image and answer output -->
+        <!-- Ends Session -->
+        <button>Thanks!</button>
+        <!-- Ask another question -->
+        <button>Ask Another Question</button>
+        
+    </div>
+
+    <div class="card-footer text-muted" id="footer">
+        <p>Group DA © Copyright 2019</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link JS Here -->
+    <!-- <script type="text/javascript" src=""></script> -->
+</body>
+
+</html>
