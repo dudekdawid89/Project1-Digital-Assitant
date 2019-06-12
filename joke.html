@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joke Generator(TEST)</title>
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center">
+           <h2>Joke Generator Test</h2> 
+        </div>
+        
+        <div class="row">
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/Placeholder_Phil.jpg" class="card-img" alt="Placeholder_Phil">
+                <div class="card-body">
+                    <h5 class="card-title">Feeling down?</h5>
+
+                    <!-- Random Joke Text Display Section -->
+                    <p class="card-text" id="jokeDisplay"></p>
+                    <button type="button" class="btn btn-primary" id="submit-button">Cheer me up!</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <!-- JavaScript -->
+        <script type="text/javascript">
+
+            // My API Key:
+            var apikey = "937b5f5cf2msh6f1ada73819b362p1803a1jsnae9a3ceff279";
+
+            // URL we need to query the database:
+            var queryURL = "https://webknox-jokes.p.rapidapi.com/jokes/oneLiner"  
+
+            $("#submit-button").on("click", function () {
+                
+                $.ajax({
+                    url: queryURL,
+                 
+                    headers: {
+                        'X-RapidAPI-Host': "webknox-jokes.p.rapidapi.com",
+                        'X-RapidAPI-Key': "937b5f5cf2msh6f1ada73819b362p1803a1jsnae9a3ceff279"
+                    },
+                    dataType: "json",
+                    method: "GET"
+                }).then(function (response) {
+                    
+                    console.log(queryURL);
+                    console.log(response.text);
+
+                    // Transfer API response content to HTML:
+                    $(".card-text").text(response.text);
+                    console.log(response);
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>
