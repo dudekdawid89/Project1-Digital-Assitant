@@ -10,14 +10,17 @@
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <!-- For use of Social Media icons -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
 </head>
 
 <body>
     <div class="container">
         <div class="row text-center">
-           <h2>Joke Generator Test</h2> 
+            <h2>Joke Generator Test</h2>
         </div>
-        
+
         <div class="row">
 
             <div class="card" style="width: 18rem;">
@@ -32,42 +35,12 @@
             </div>
         </div>
 
-
         <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-        <!-- JavaScript -->
-        <script type="text/javascript">
-
-            // My API Key:
-            var apikey = "937b5f5cf2msh6f1ada73819b362p1803a1jsnae9a3ceff279";
-
-            // URL we need to query the database:
-            var queryURL = "https://webknox-jokes.p.rapidapi.com/jokes/oneLiner"  
-
-            $("#submit-button").on("click", function () {
-                
-                $.ajax({
-                    url: queryURL,
-                 
-                    headers: {
-                        'X-RapidAPI-Host': "webknox-jokes.p.rapidapi.com",
-                        'X-RapidAPI-Key': "937b5f5cf2msh6f1ada73819b362p1803a1jsnae9a3ceff279"
-                    },
-                    dataType: "json",
-                    method: "GET"
-                }).then(function (response) {
-                    
-                    console.log(queryURL);
-                    console.log(response.text);
-
-                    // Transfer API response content to HTML:
-                    $(".card-text").text(response.text);
-                    console.log(response);
-                });
-            });
-        </script>
+        <!-- JavaScript link -->
+        <script src="./joke.js"></script>
     </div>
 </body>
 
