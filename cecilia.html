@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Digital Assistant</title>
+    <title>Digital Assistant-Scheduler</title>
 
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -25,29 +25,63 @@
 
     <div class="jumbotron jumbotron-fluid" id="header">
         <div class="container">
-            <h1 class="display-4 text-center">Digital Assistant</h1>
-            <h3 class="display-4 text-center">Calendar</h3>
-            <h2></h2>
+            <h1>Scheduler</h1>
+            <!-- dynamically show the current date here  -->
+            <h3>Today's Date: </h3> 
+            <div class="today-date"></div>
+            <h3>Current Time</h3>
+                <div class="current-time"></div>
+                <!-- dynamically show the current time here -->
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="schedule-con">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <div class="card mb-4">
-                    <div class="card-header">Schedule Today</div>
+                    <div class="card-header">What would you like to keep track of today?</div>
                     <div class="card-body">
-                        <table class="table table-sm table-hover" id='train-table'>
+                        <table class="table table-sm table-hover" id='schedule-table'>
                             <thead>
                                 <tr>
-                                    <th scope="col"></th>
                                     <th scope="col">Time</th>
+                                    <th scope="col">Task</th>
+                                    <th scope="col">Notes</th>
+                                    <th scope="col">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- New activities will go here  -->
+                                <!-- New tasks will go here  -->
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Add tasks -->
+                <div class="card mb-4">
+                    <div class="card-header">Add Tasks</div>
+                    <div class="card body">
+                        <form>
+                            <div class="form-group">
+                                <label for="time-input">Time</label>
+                                <input class="form-control" id="time-input" type="text" placeholder="09:00 AM">
+                            </div>
+                            <div class="form-group">
+                                <label for="task-input">Task</label>
+                                <input class="form-control" id="task-input" type="text" placeholder="Walk the dog">
+                            </div>
+                            <div class="form-group">
+                                <label for="notes-input">Notes</label>
+                                <input class="form-control" id="notes-input" type="text"
+                                    placeholder="It's going to rain!">
+                            </div>
+                            <button class="btn btn-primary float-left" id="add-train-btn">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -57,7 +91,6 @@
     <footer class="footer mt-auto  fixed-bottom bg-dark py-0">
         <div class="wraper bg-light text-center">
             <button id="button-thanks">Thanks!</button>
-            <button id="button-AAQ">Ask Another Question</button>
         </div>
         <div class="container">
             <div class="text-center">
@@ -67,13 +100,9 @@
         </div>
     </footer>
 
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/ceciliacalendar.js"></script>
 
-</html>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Link JS Here -->
-<!-- <script type="text/javascript" src=""></script> -->
 </body>
 
 </html>
