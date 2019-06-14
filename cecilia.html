@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digital Assistant-Scheduler</title>
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <!-- CSS Styling  -->
+    <link rel="stylesheet" href="./assets/styling/styles.css">
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid" id="header">
+        <div class="container">
+            <h1>Scheduler</h1>
+            <!-- dynamically show the current date here  -->
+            <h3>Today's Date: </h3> 
+            <div class="today-date"></div>
+            <h3>Current Time</h3>
+                <div class="current-time"></div>
+                <!-- dynamically show the current time here -->
+        </div>
+    </div>
+
+    <div class="container" id="schedule-con">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mb-4">
+                    <div class="card-header">What would you like to keep track of today?</div>
+                    <div class="card-body">
+                        <table class="table table-sm table-hover" id='schedule-table'>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Task</th>
+                                    <th scope="col">Notes</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- New tasks will go here  -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Add tasks -->
+                <div class="card mb-4">
+                    <div class="card-header">Add Tasks</div>
+                    <div class="card body">
+                        <form>
+                            <div class="form-group">
+                                <label for="time-input">Time</label>
+                                <input class="form-control" id="time-input" type="text" placeholder="09:00 AM">
+                            </div>
+                            <div class="form-group">
+                                <label for="task-input">Task</label>
+                                <input class="form-control" id="task-input" type="text" placeholder="Walk the dog">
+                            </div>
+                            <div class="form-group">
+                                <label for="notes-input">Notes</label>
+                                <input class="form-control" id="notes-input" type="text"
+                                    placeholder="It's going to rain!">
+                            </div>
+                            <button class="btn btn-primary float-left" id="add-train-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto  fixed-bottom bg-dark py-0">
+        <div class="wraper bg-light text-center">
+            <button id="button-thanks">Thanks!</button>
+        </div>
+        <div class="container">
+            <div class="text-center">
+                <br>
+                <span class="text-muted">Group DA © Copyright 2019</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/ceciliacalendar.js"></script>
+
+</body>
+
+</html>
