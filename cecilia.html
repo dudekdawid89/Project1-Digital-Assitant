@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styling/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <title>Scheduler</title>
+</head>
+<body>
+        <nav class="navbar" id="nav">
+                <a class="navbar-brand" href="#" id="brand">
+                  <img src="./assets/images/image.png" width="30" height="30" class="d-inline-block align-top rounded-circle" alt="" id="logo">
+                  Phil <p class="float-right" id="pagetitle">Scheduler</p>
+                </a>
+        </nav>
+
+        <div class="container" id="firstcontainer">
+            <img src="./assets/images/colors(gif).gif" data-animate="assets/images/gif.gif" data-still="assets/images/still.gif" alt="" class="rounded-circle mx-auto d-block" id="gif">
+        </div>
+        <div class="container" id="content">
+          <p id="ques">What would you like to keep track of today?</p>
+          <p id="watch"></p>
+            <form>
+                <div class="form-group">
+                        <label for="task" class="lbl">Add Task </label>
+                        <input type="task" class="form-control" id="task" placeholder="Call Mom">
+                    </div>
+                    <div class="form-group">
+                        <label for="time" class="lbl">Add Time</label>
+                        <input type="time" class="form-control" id="time" placeholder="9am">
+                    </div>  
+                    
+                </form>
+                <button class="btn btn-primary" id="submit">Submit</button>
+                <table class="table" id="table">
+                        <thead id="tableheader">
+                          <tr>
+                            <th scope="col" class="tablehead">Task</th>
+                            <th scope="col" class="tablehead">Time</th>
+                            <th scope="col" class="tablehead" id="rmbtn">Remove entry</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                         
+                        </tbody>
+                        </table>
+          
+        </div>
+        <footer class="footer mt-auto  fixed-bottom py-0" id="footer">
+            <div class="wraper text-center" id="gbbtn">
+                <button class="btn" id="button-goback" ><a id="gbcar">&#x293E</a></button>
+                <!-- &#x293E- &#x293E--->
+            </div>
+            <div class="container">
+                <div class="text-center">
+                    <span id="copyright">Group DA © Copyright 2019</span>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src=""></script>
+</body>
+</html>
