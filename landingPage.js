@@ -33,6 +33,7 @@ function setBkgGreeting() {
   } else if (17 <= currentTime && currentTime < 20) {
     document.body.style.backgroundImage = "url('./images/sunset_pink.jpg')";
     greeting.textContent = "Good Evening";
+    document.body.style.color = "white";
     console.log(greeting.textContent);
   }
 
