@@ -1,7 +1,7 @@
 body {
+    background-color: rgb(164, 235, 235);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    background: linear-gradient(rgb(0, 102, 255), yellow);
 };
 
 /* ===== Speech Bubble STANDARD style ===== */
