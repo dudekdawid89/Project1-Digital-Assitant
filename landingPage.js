@@ -16,8 +16,8 @@ function setBkgGreeting () {
 
     // Morning (6 - 09:59AM)
     if (6 <= currentTime && currentTime < 10) {
-        document.body.style.backgroundImage = "url('/Project1-MB/images/sunrise_cloud.jpg')";
-        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundImage = "url('./images/sunrise_cloud.jpg')";
+        // document.body.style.backgroundRepeat = "no-repeat";
         
         greeting.textContent = "Good Morning";
         console.log(greeting.textContent);
@@ -25,21 +25,21 @@ function setBkgGreeting () {
     // Daytime (10AM - 4:59PM)    
     } else if (10 <= currentTime && currentTime < 17) {
 
-        document.body.style.backgroundImage = "url('/Project1-MB/images/beach_daytime.jpg')";
+        document.body.style.backgroundImage = "url('./images/beach_daytime.jpg')";
         greeting.textContent = "Good Day";
-        document.body.style.backgroundRepeat = "no-repeat";
+        // document.body.style.backgroundRepeat = "no-repeat";
         console.log(greeting.textContent);
 
     // Late Afternoon/Sunset (5 - 7:59PM)
     } else if (17 <= currentTime && currentTime < 20) {
-        document.body.style.backgroundImage = "url('/Project1-MB/images/sunset_pink.jpg')";
+        document.body.style.backgroundImage = "url('./images/sunset_pink.jpg')";
         greeting.textContent = "Good Evening";
         console.log(greeting.textContent);
     }
 
     // Night (8PM - 5:59AM)
     else   // (20 <= currentTime && currentTime < 6)
-        document.body.style.backgroundImage = "url('/Project1-MB/images/beach_night.jpg')";
+        document.body.style.backgroundImage = "url('./images/beach_night.jpg')";
         greeting.textContent = "Good Night";
         document.body.style.color = 'white';
         // document.body.background = "night";
