@@ -1,0 +1,108 @@
+body{
+    
+    background-size: cover;
+}
+#firstcontainer{
+    /* background-color: rgba(0,0,0,0.5); */
+    margin-top: 30px;
+   padding-top: 100px;
+    
+}
+#gif{
+    background-color: black;
+    opacity: 0.6;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+#nav{
+    background-color: black;
+    color: white;
+}
+#brand{
+    color: white;
+    text-decoration: none; /* no underline */
+   
+    font-weight: 100;
+  }
+  #logo{
+    margin-right: 10px;
+  }
+  #content{
+      
+      /* background-color: rgba(0,0,0,0.2); */
+      width: 80%;
+      margin-top: 30px;
+      margin-bottom: 130px;
+      padding: 30px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+  }
+  #pagetitle{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+#footer{
+    background-color: black;
+    color: white;
+}
+#copyright{
+    color: grey;
+    font-size: 10px;
+}
+#button-goback{
+    background-color: black; 
+    color: white;
+    font-size: 30px;
+    border: 2px white solid;
+    border-radius: 50%;
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 52.8px;
+}
+/* ----------------------mari */
+
+/* 
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;   */
+    /* flex-direction: column; Change the default of elements going in a row to columns */
+    /* align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+    /* height: 100vh; To take up the entire viewport */
+    /* color: rgb(17, 16, 16);
+} */
+ 
+#currentTime {
+    font-size: 4rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+    margin: 1rem 0;
+}
+
+h3 {
+    opacity: 0.6;
+}
+
+@media(max-width: 576px) {
+    #time {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+.greeting,#caption{
+    font-weight: 100;
+}
