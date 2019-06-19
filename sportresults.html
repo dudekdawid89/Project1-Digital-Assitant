@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/sportresults.css">
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <title>Scheduler</title>
+</head>
+<body>
+        <nav class="navbar" id="nav">
+                <a class="navbar-brand" href="#" id="brand">
+                  <img src="assets/images/Baymax_transparent.png" width="30" height="30" class="d-inline-block align-top rounded-circle" alt="" id="logo">
+                  Phil <p class="float-right" id="pagetitle">Sport Results</p>
+                </a>
+        </nav>
+
+     
+        <div class="container" id="content">
+
+                <header class="v-header container">
+                        <div class="fullscreen-video-wrap">
+                
+                            <!-- <video src="./sports assests/Images/sports.webm" autoplay="" loop="">
+                            </video> -->
+                        </div>
+                        <div class="header-overlay"></div>
+                        <div class="header-content text-md-left">
+                            <h1 id="title">Sports Scores</h1>
+                            <!-- Antonine, this will be a table to display horizontally -->
+                            <table class="table scores">
+                                 
+                            </table>
+                         
+                             Select Date:  <input type="text" width="200px" class="form-control text-left" id="data-date"  >
+                         
+                        </div>
+                      
+                    </header>
+            </div>
+            <footer class="footer mt-auto  fixed-bottom py-0" id="footer">
+                <div class="wraper text-center" id="gbbtn">
+                    <button class="btn" id="button-goback" ><a id="gbcar">&#x293E</a></button>
+                    <!-- &#x293E- &#x293E--->
+                </div>
+                <div class="container">
+                    <div class="text-center">
+                        <span id="copyright">Group DA © Copyright 2019</span>
+                    </div>
+                </div>
+            </footer>
+    
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+
+            <!-- bootstrap jquery -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
+                <!-- Jquery -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+             
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script src="assets/javascripts/sportresults.js"></script>
+    </body>
+    </html>
