@@ -1,0 +1,204 @@
+#button4{
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
+  font-size: 40px;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+
+  margin-top: 180px;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(1deg); }
+    10% { transform: translate(30px, -2px) rotate(0deg); }
+    20% { transform: translate(-3px, 5px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-1px, 1px) rotate(0deg); }
+    70% { transform: translate(1px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 1px) rotate(0deg); }
+    100% { transform: translate(1px, -1px) rotate(-1deg); }
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  body{
+    background-image: url("../images/2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    
+  }
+#dishmsg,#dietmsg,#caloriesmsg{
+  color:red;
+}
+  #buttonFirst{
+    /* background-color: rgba(0,0,0,0.4); */
+    color: white;
+      height: 500px;
+  }
+
+  .firstButton {
+    margin-top: 180px;
+    font-size: 40px;
+  }
+  
+  .secondButton {
+    margin-top: 180px;
+    font-size: 40px;
+    animation: shake2 2.5s; 
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+  
+    margin-top: 180px;
+  }
+  
+  @keyframes shake2 {
+      0% { transform: translate(5px, 1px) rotate(6deg); }
+      10% { transform: translate(30px, -2px) rotate(3deg); }
+      20% { transform: translate(-3px, 50px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-px, 2px) rotate(-1deg); }
+      60% { transform: translate(-430px, 64px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-76px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 23px) rotate(0deg); }
+      100% { transform: translate(80px, -2px) rotate(-900deg); }
+    }
+  
+  .thirdButton{
+    margin-top: 180px;
+    font-size: 40px;
+    animation: shake3 2.5s; 
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+  
+    margin-top: 180px;
+  }
+  
+  @keyframes shake3 {
+      0% { transform: translate(100px, 1px) rotate(60deg); }
+      10% { transform: translate(30px, -2px) rotate(3deg); }
+      20% { transform: translate(-3px, 500px) rotate(1deg); }
+      30% { transform: translate(30px, 20px) rotate(0deg); }
+      40% { transform: translate(1px, -100px) rotate(1deg); }
+      50% { transform: translate(-10px, 2px) rotate(-1deg); }
+      60% { transform: translate(-30px, 1px) rotate(0deg); }
+      70% { transform: translate(30px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 20px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    body{
+      /* background-image: url("../images/lg-g7-thinq-1920x1080-abstract-colorful-android-8-0-4k-20613.jpg"); */
+      background-size: cover;
+  }
+  #firstcontainer{
+      /* background-color: rgba(0,0,0,0.5); */
+      margin-top: 30px;
+     
+      
+  }
+  #gif{
+      background-color: black;
+      opacity: 0.6;
+      height: 200px;
+      width: 200px;
+      margin: 0 auto;
+  }
+  #nav{
+      background-color: black;
+      color: white;
+  }
+  #brand{
+      color: white;
+      text-decoration: none; /* no underline */
+     
+      font-weight: 100;
+    }
+    #logo{
+      margin-right: 10px;
+    }
+    #content{
+        
+        background-color: rgba(0,0,0,0.4);
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 130px;
+        padding: 30px;
+        
+  
+    }
+    #footer{
+      background-color:  rgba(0,0,0,0.7);
+      color: white;
+  }
+  #copyright{
+      color: grey;
+      font-size: 10px;
+  }
+  #button-goback{
+      background-color:  rgba(0,0,0,0.7);
+      color: white;
+      font-size: 30px;
+      border: 2px white solid;
+      border-radius: 50%;
+      padding-top: 0px;
+      padding-bottom: 4px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 52.8px;
+  }
+  #pagetitle{
+      font-size: 15px;
+      padding-left: 10px;
+      padding-top: 6px;
+  }
+  .ins{
+    background-color: rgba(0,0,0,0.1); 
+    color: white;
+    border: 1px white solid;
+}
+#sorryMsg{
+  color:white;
+}
