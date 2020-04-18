@@ -20,4 +20,6 @@ Schedule (User's calendar events, CTA train schedule, etc.)
 Sports score (e.g. Cubs score)
 Recommended recipe for the day (e.g. based on ingredient, cuisine, health criteria (vegan, etc.))
 
+
+Deployed Link: https://groupproject1-live1.herokuapp.com/
  
